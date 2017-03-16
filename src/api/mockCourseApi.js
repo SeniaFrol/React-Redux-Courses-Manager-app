@@ -1,3 +1,5 @@
+// This is 100% copy paste of code. Pasted from online courses.
+
 import delay from './delay';
 
 // This file mocks a web API by working with the hard-coded data below.
