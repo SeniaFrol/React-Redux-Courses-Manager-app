@@ -15,6 +15,7 @@ class ManageCoursePage extends Component {
     };
   }
 
+// if user refreshes the page, then fill out form with current data (previous props)
   componentWillReceiveProps(nextProps) {
     if (this.props.course.id != nextProps.course.id) {
       this.setState({course: Object.assign({}, nextProps.course)});
@@ -30,7 +31,7 @@ class ManageCoursePage extends Component {
 
   saveCourse = (event) => {
     event.preventDefault();
-    this.props.actions.saveCourse(this.state.course);
+    this.props.actions.saveCourse(this.state.course
     this.context.router.push('/courses');
   }
 

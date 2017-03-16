@@ -33,7 +33,7 @@ class CoursesPage extends Component {
   }
 }
 
-function mapStateToProps({courses}, ownProps) {
+function mapStateToProps({courses}) {
   return {courses};
 }
 
