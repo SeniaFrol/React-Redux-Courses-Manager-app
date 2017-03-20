@@ -31,7 +31,7 @@ class ManageCoursePage extends Component {
 
   saveCourse = (event) => {
     event.preventDefault();
-    this.props.actions.saveCourse(this.state.course
+    this.props.actions.saveCourse(this.state.course);
     this.context.router.push('/courses');
   }
 
